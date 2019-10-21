@@ -19,11 +19,6 @@
 
         .navbar-custom li a {
             color: #000;
-            transition: transform 0.5s;
-
-        }
-        .navbar-custom li a:hover{
-            transform:scale(1.03)
         }
 
         .btn-success {
@@ -33,9 +28,9 @@
         }
 
         .btn-success:hover {
-            background-color: rgb(2, 20, 12);
+            background-color: #2DCE89;
             color: #fff;
-            border: thin solid rgb(2, 20, 12);
+            border: thin solid #2dce89;
         }
 
         .custom-toggler .navbar-toggler-icon {
@@ -91,19 +86,23 @@
         a:hover {
             text-decoration: none;
         }
-        .green-buttons{
+
+        .green-buttons {
             transition: background-color 1s;
         }
-        .green-buttons:hover{
+
+        .green-buttons:hover {
             background-color: #32bf83;
             border: 1px solid #32bf83;
-    
+
         }
-        .green-link{
+
+        .green-link {
             color: #44CF6C;
             transition: color 0.5s;
         }
-        .green-link:hover{
+
+        .green-link:hover {
             color: #32bf83;
         }
 
@@ -133,46 +132,55 @@
         .search {
             background-color: #44CF6C;
         }
-        #faq-link{
+
+        #faq-link {
             transition: transform 0.5s;
         }
-        #faq-link:hover{
+
+        #faq-link:hover {
             transform: scale(1.07);
         }
+
         .support {
             background-image: url('https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570910454/startng/Rectangle_66_iauqka.png');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .contact {
             width: 1200px;
             margin-left: 25px;
         }
+
         @media screen and (max-width: 1024px) {
             .contact {
                 width: 1200px;
                 margin-left: 10px;
             }
         }
+
         @media screen and (max-width: 768px) {
             .contact {
                 width: 1200px;
                 margin-left: 10px;
             }
         }
+
         @media screen and (max-width: 425px) {
             .contact {
                 width: 1200px;
                 margin-left: -21px;
             }
         }
+
         @media screen and (max-width: 375px) {
             .contact {
                 width: 1200px;
                 margin-left: -15px;
             }
         }
+
         /* Body Style Ends*/
     </style>
 </head>
@@ -202,7 +210,7 @@
                         <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                     <li class="nav-item mr-5">
-                        <a class="btn btn-success nav-link px-5 text-white green-buttons" href="register.html">Start
+                        <a class="btn btn-success nav-link px-5" href="register.html" style="color: #fff;">Start
                             Learning</a>
                     </li>
                 </ul>
@@ -211,32 +219,39 @@
     </nav>
 
     <div class="container-fluid banner">
-        <img src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570908542/startng/Group_411_d0xdb8.png" class="img-fluid contact" height="100">
+        <img src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570908542/startng/Group_411_d0xdb8.png"
+            class="img-fluid" height="100">
     </div>
+
     <div class="container-fluid search pt-5 pb-5">
-        <div class="input-group col-12 col-md-10 mx-auto pt-3 pb-3">
-            <input type="text" class="form-control pt-4 pb-4" placeholder="Find answers now!" style="border: thin solid #fff; border-right-color: #44CF6C; border-radius: 4px;">
-            <div class="input-group-append" id = "faq-link">
-                    <a class="btn btn-secondary w-100 px-md-5 input-group-text" href="help.html"  role="button" style="background-color: #fff; color: #44CF6C; border-color: #fff; border-left-color: #44CF6C;">
-                        Search FAQ
-                    </a>
+        <div class="input-group col-md-10 offset-md-1 pt-3 pb-3">
+            <input type="text" class="form-control pt-4 pb-4" placeholder="Find answers now!"
+                style="border: thin solid #fff; border-right-color: #44CF6C; border-radius: 4px;">
+            <div class="input-group-append" id="faq-link">
+                <a class="btn btn-secondary w-100 px-md-5 input-group-text" href="help.html" role="button"
+                    style="background-color: #fff; color: #44CF6C; border-color: #fff; border-left-color: #44CF6C;">
+                    Search FAQ
+                </a>
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5">
+
+    <div class="container-fluid mt-2 mt-md-5">
         <form>
-            <div class="col-md-10 offset-md-1 pt-5 pb-5">
+            <div class="col-md-10 offset-md-1 pt-3 pt-md-5 pb-5">
                 <div class="row mb-2">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="usr" class="pb-2">First Name</label>
-                            <input type="text" pattern = "[A-Za-z -]{1,32}" title = "Please input your First Name" class="form-control" id="Fname" required>
+                            <input type="text" pattern="[A-Za-z -]{1,32}" title="Please input your First Name"
+                                class="form-control" id="Fname" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="usr" class="pb-2">Last Name</label>
-                            <input type="text" pattern = "[A-Za-z -]{1,32}" title = "Please input your Last Name" class="form-control" id="Lname" required>
+                            <input type="text" pattern="[A-Za-z -]{1,32}" title="Please input your Last Name"
+                                class="form-control" id="Lname" required>
                         </div>
                     </div>
                 </div>
@@ -250,15 +265,16 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="usr" class="pb-2">Phone Number</label>
-                            <input type="text" pattern = "^[0-9\)\(+-]+$" title = "Please input a correct phone number" class="form-control" id="Pnum" required>
+                            <input type="text" pattern="^[0-9\)\(+-]+$" title="Please input a correct phone number"
+                                class="form-control" id="Pnum" required>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5 mb-5">
+                <div class="row my-3 my-md-5">
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="comment" class="pb-2">Write Your Message</label>
-                            <textarea class="form-control" rows="5" id="comment" required></textarea>
+                            <textarea class="form-control" rows="5" id="comment" required></textarea
                         </div>
                     </div>
                 </div>
@@ -267,6 +283,7 @@
                     <p class="pb-3">By filling out this form and clicking submit, <br> you acknowledge our <a href="privacy-policy.html" class = "green-link">privacy policy</a></p>
                     <button class="btn btn-success pl-5 pr-5 green-buttons" id = "submit">Submit</button>
                 </div>
+                </div>   
             </div>
         </form>
     </div>
@@ -294,7 +311,7 @@
                 <div class="row pb-4">
                     <div class="col-lg-4 col-md-12 mb-3">
                         <h4 class='mb-4'>Ready to take the Leap?</h4>
-                        <a href="register.html" class='btn btn-success px-5 py-2 mb-5 green-buttons'>Start!</a>
+                        <a href="register.html" class='btn btn-success px-5 py-2 mb-5'>Start!</a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 my-2">
                         <li><a href="about.html">About Us</a></li>
@@ -315,7 +332,7 @@
                     <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 my-2">
                         <li><a href="help.html">FAQ</a></li>
                         <li><a href="termsOfService.html">Terms of Service</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </div>
                 </div>
 
@@ -342,23 +359,24 @@
         const email = document.getElementById("Eaddr");
         const number = document.getElementById("Pnum");
         const message = document.getElementById("comment");
-        const array = [submit,firstName,lastName,email,number,message];
-        let isFirstNameValid = 
-        window.onload = () =>{
-            submit.addEventListener("click", ()=>{
-                if(allFieldsValid(array)){
-                    alert("Your message has been sent");
-                }
-            });
-        }
+        const array = [submit, firstName, lastName, email, number, message];
+        let isFirstNameValid =
+            window.onload = () => {
+                submit.addEventListener("click", () => {
+                    if (allFieldsValid(array)) {
+                        alert("Your message has been sent");
+                    }
+                });
+            }
 
-        function allFieldsValid(array){
+        function allFieldsValid(array) {
             return [...array].every(field => field.checkValidity());
         }
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
-</html> 
+</html>
